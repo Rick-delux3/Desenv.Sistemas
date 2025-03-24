@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+
+        <h1>Dobro de um número</h1>
+        <label for="numero">Numero</label>
+        <input type="number" id="numero">
+        <input type="button" value="Calcular" onclick="calcular()">
+    </form> 
+    <script>
+        function calcular(){
+            var numero;
+            //recebendi o valor input do html e atribuindo na varíavel
+            numero = Number(document.getElementById("numero").value);
+            var Dobro = numero*2;
+            alert(`O dobro do valor é ${Dobro}}`)
+        }
+    </script>
+</body>
+</html>

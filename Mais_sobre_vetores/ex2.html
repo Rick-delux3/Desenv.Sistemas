@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo2</title>
+</head>
+<body>
+    <script>
+        //filtrando valores no vetor
+
+        var idades = [5, 18, 35, 72,12,9];
+        var maioresIdade = []    
+        for(var i=0; i<idades.length; i++){
+            if(idades[i]>=18){
+                document.writeln(idades[i]);
+                maioresIdade.push(idades[i])
+
+            }
+
+        }
+        document.writeln(`Qtd de maiores de idade: ${maioresIdade}`);
+
+
+
+
+    </script>
+</body>
+</html>
