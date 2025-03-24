@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array(vetor)
+        var cores = ["laranja", "amarelo", "roxo",];
+
+        //add valor no array
+        cores.push("verde");
+
+        //add no inicio
+        cores.unshift("Azul");
+        document.writeln(cores);
+
+        //remover valor do inicip
+        cores.shift();
+        document.writeln("<br>"+cores);
+        document.writeln("<br> quantidade de posições:"+cores.length);
+
+        cores[2] = "azul escuro";
+        document.writeln(cores[10]);
+
+        
+
+
+    </script>
+</body>
+</html>

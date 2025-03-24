@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+<body>
+    <script>
+        var numero = 1;
+        var i = 0
+        var SomaPar = 0
+
+        while(numero!=0){
+            numero = Number(prompt("Insira um número: "));
+
+            i++;
+
+            if(numero%2==0){
+                somaPar += numero
+            }
+        }
+        document.writeln(`Total de valores: ${i}`);
+        document.writeln(`Soma dos pares: ${SomaPar}`);
+
+
+
+    </script>
+</body>
+</html>
