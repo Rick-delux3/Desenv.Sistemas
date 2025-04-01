@@ -8,29 +8,33 @@
 </head>
 <body>
     <script>
-       let idades = [];
-    let id = 0;
-    let maior = 0;
-let menor = 0;
-do{
-    id = Number(prompt("Digite uma idade:"));
-    idades.push(id);
-}while(id>=10)
-for(let i=0; i<idades.length; i++){
-    if(i==0){
-        menor = idades[i];
-    }
+        let idades = [];
+        let id = 0;
+        let maior = 0;
+        let menor = 0;
+        do{
 
-    if(idades[i]>maior){
-        maior = idades[i];
-    }
+            id = Number(prompt("Digite uma idade:"));
+            idades.push(id);
 
-    if(idades[i]<menor){
-        menor = idades[i];
-    }
-}
-document.writeln(maior);
-document.writeln(menor);
+        }
+        while(id>=10)
+        
+            for(let i=0; i<idades.length; i++){
+                if(i==0){
+                    menor = idades[i];
+                }
+
+                if(idades[i]>maior){
+                    maior = idades[i];
+                }
+
+                if(idades[i]<menor){
+                    menor = idades[i];
+                }
+            }
+            document.writeln(maior);
+            document.writeln(menor);
 
 
 
