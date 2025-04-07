@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3</title>
+</head>
+<body>
+    <script src="./exemplo3.js"></script>
+    <script>
+        //função "coletora"
+        var valor = somar(10,5);
+        alert(valor);
+
+        alert(somar(5, 7));
+
+        var valor2 = somar(10,5) + somar(5,7);
+        alert(valor2);
+
+        var n1 = Number(prompt("Insira um valor"))
+        var n2 = Number(prompt("Insira OUTRO valor"));
+
+        var resultado = somar(n1,n2);
+        alert(resultado);
+
+        var resultado2 = subtrair(n1,n2);
+        alert(resultado2);
+
+        var resultado3 = dobro(n1);
+        alert(`O dobro do valor ${n1} é de ${resultado3}`);
+
+    </script>
+</body>
+</html>
