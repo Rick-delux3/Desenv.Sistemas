@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array de objetos
+        var vetor = ["maça", "uva", "banana"];
+
+        var vetorObjeto = [
+            {nome: "Gabriela", media: 8.5}, //Usamos "{}" para criar um objeto
+            {nome: "Alberto", media: 9},
+            {nome: "João", media: 5},
+        ];
+
+        console.log(vetorObjeto);
+
+        var nomeInserido = prompt("Insira um nome: ");
+        var mediaInserida = Number(prompt("insira a média: "));
+        vetorObjeto.push({nome: nomeInserido, media: mediaInserida});
+        //console.log(vetorObjeto);
+        //console.log(vetorObjeto[0].nome);
+        //console.log(vetorObjeto[0].media);
+
+        document.writeln("<h2>Lista de Alunos </h2>");
+
+        vetorObjeto.forEach(aluno => {
+            document.writeln(`Nome: ${aluno.nome} - Média: ${aluno.media} 
+            <br>`);
+        });
+
+        
+    </script>
+</body>
+</html>
