@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Jogos</h1>
+    <h2>em vetor Objetos</h2>
+    <div class="cadastrio">
+        <label for="input-name">Insita o nome do Jogo</label>
+        <input type="text" name="input" id="input-name">
+        <br>
+        <label for="input-lancamento">Insira o Ano de Lancamento</label>
+        <input type="number" id="input-lancamento">
+        <br>
+        <button onclick="adicionarJogo()">Add Jogo</button>
+        <button onclick="limparCampos()">Limpar</button>
+    </div>
+    <h2>Listagem de Jogos</h2>
+    <div id="listar">
+
+    </div>
+
+    <h2>Busca de Jogos</h2>
+    <div id="buscar">
+        <label for="nomeBusca">Buscar</label>
+        <input type="text" placeholder="Efetua sua busca" id="nomeBusca">
+        <button onclick="buscarJogo()">Buscar</button>
+    </div>
+    <div id="resultadobusca"></div>
+    <script src="Js/functions.js"></script>
+
+</body>
+</html>
