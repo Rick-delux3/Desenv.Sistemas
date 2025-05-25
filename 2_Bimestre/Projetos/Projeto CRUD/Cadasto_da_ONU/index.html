@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <div class="d-flex container flex-column justify-content-betweenz align-items-center" >
-        <form> 
+    <div class="" >
+        <form>
+            <fieldset>Listagem de Países da Onu</fieldset> 
             <label for="nome" class="col-lg-3">Digite o nome do País</label>
             <input type="text" class="col-3" id="nome">
             <label for="">Nome do presidente: </label>
@@ -20,8 +21,21 @@
             <label for="">Continente:</label>
             <input type="text" id="Contin">
             <button onclick="adicionarPais()"></button>
-            <button onclick="RemoverPais()"></button>
         </form>
+        
+        <div>
+            <h3>Listagem de Países:</h3>
+            <div id="exibir"></div>
+        </div>
+        <div>
+            <h3>Excluir País</h3>
+            <label for="pais"></label>
+            <input type="text" class="pais">
+            <br>
+            <button onclick="RemoverPais()">Excluir</button>
+            <div class="resultadoExcluir"></div>
+        </div>
+        
     </div>
 
 
