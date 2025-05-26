@@ -10,11 +10,11 @@ let pais = [
 
 
 function exibirPaises(){
-    let output = document.querySelector("#exibir");
+    let output = document.getElementsByClassName("exibir");
     output.innerHTML = ""
 
     pais.forEach(onu =>{
-        output.innerHTML += `País: ${onu.nome} | Presidente: ${onu.presi} | Continente: ${onu.conti}`;
+        output.innerHTML += `País: ${onu.nome} | <br> Presidente: ${onu.presi} | <br> Continente: ${onu.conti}`;
 
     })
 
@@ -49,14 +49,57 @@ function RemoverPais(){
     
         output.innerHTML = `<h3 style="color:green"> País ${input_pais} deserdado com sucesso!! </h3>`
         exibirPaises()
+        limparCampos()
+
+    }
+    else{
+        output.innerHTML = `<h3 style="color:red"> Não foi possivel identificar o país!! </h3>`;
 
     }
 
-
     
+};
 
+function limparCampos(){
+    document.querySelector("#cod").value = "";
+    document.querySelector("#presi").value = "";
+    document.querySelector("#contin").value = "";
+
+
+};
+
+
+document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+
+
+
+
+
+    let input_cod = document.querySelector("#cod").value;
+    let input_Novonome = document.querySelector("#EditNome").value;
+    let input_NovoPresi = document.querySelector("#editPresi").value;
     
+    
+    const Edit = pais.find(onu => onu.cod === input_cod);
+    
+    if(Edit){
+        Edit.nome = input_Novonome;
+        Edit.presi = input_NovoPresi;
+    
+        exibirPaises()
+        this.reset()
+    }
+    else{
+        alert("Pais não encontrado!!")
+    };
+
+
+});
 
 
 
-}
+
+
+
