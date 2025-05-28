@@ -1,102 +1,75 @@
-let pais = [
-    {
-        cod: 1,
-        nome: "China",
-        presi: "Shang Chi",
-        conti: "Asia"
-        
-    }
-]
+let paises = [
+  {
+    cod: 1,
+    nome: "FRANÇA",
+    presi: "DESCONHECIDO",
+    conti: "EUROPA"
+  }
+];
 
+function exibirPaises() {
+    let output = document.querySelector(".exibir"); // Corrigido
+    output.innerHTML = "";
 
-function exibirPaises(){
-    let output = document.getElementsByClassName("exibir");
-    output.innerHTML = ""
+    paises.forEach(onu => {
+    output.innerHTML += `
+      <div class="card">
+        <h3>${onu.nome}</h3>
+        <p><strong>Código:</strong> ${onu.cod}</p>
+        <p><strong>Presidente:</strong> ${onu.presi}</p>
+        <p><strong>Continente:</strong> ${onu.conti}</p>
+      </div>
+    `;
+    });
+  }
 
-    pais.forEach(onu =>{
-        output.innerHTML += `País: ${onu.nome} | <br> Presidente: ${onu.presi} | <br> Continente: ${onu.conti}`;
-
-    })
-
-
-}
-function adicionarPais(){
-    let input_cod = document.querySelector("#cod")
+  // Adiciona um novo país ao vetor e salva no localStorage
+  function adicionarPais() {
+    let input_cod = document.querySelector("#cod").value;
     let nome = document.querySelector("#nome").value;
     let presi = document.querySelector("#presi").value;
     let cont = document.querySelector("#Contin").value;
 
-    if(nome && presi && cont){
-        pais.push([{cod:input_cod, nome:nome, presi:presi, conti:cont}]);
-        alert("Pais adicionado com sucesso!!")
-        exibirPaises()
+    if (nome && presi && cont && input_cod) {
+      paises.push({
+        cod: Number(input_cod),
+        nome: nome,
+        presi: presi,
+        conti: cont
+      });
+
+      console.log(paises)
+
+      // Atualiza o localStorage
+      localStorage.setItem("paises", JSON.stringify(paises));
+
+      alert("País adicionado com sucesso!");
+      exibirPaises();
+      limparCampos();
+    } else {
+      alert("Dados inválidos!");
     }
-    else{
-        alert("Dados inválidos!!");
-    }
+  }
 
-}
-function RemoverPais(){
-    let input_pais = document.querySelector(".pais")
+  // Exibir os países ao carregar a página
+  window.onload = exibirPaises;
 
-    let indice = pais.findIndex(pais => pais.cod == input_pais);
 
-    let output = document.querySelector(".resultadoExcluir").value;
-
-    if(indice != -1){
-
-        pais.splice(indice,1)
-    
-        output.innerHTML = `<h3 style="color:green"> País ${input_pais} deserdado com sucesso!! </h3>`
-        exibirPaises()
-        limparCampos()
-
-    }
-    else{
-        output.innerHTML = `<h3 style="color:red"> Não foi possivel identificar o país!! </h3>`;
-
-    }
-
-    
-};
 
 function limparCampos(){
     document.querySelector("#cod").value = "";
+    document.querySelector("#nome").value = "";
     document.querySelector("#presi").value = "";
     document.querySelector("#contin").value = "";
 
 
 };
 
-
-document.getElementById("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-
+window.onload = function(){
+  exibirPaises()
+}
 
 
-
-
-    let input_cod = document.querySelector("#cod").value;
-    let input_Novonome = document.querySelector("#EditNome").value;
-    let input_NovoPresi = document.querySelector("#editPresi").value;
-    
-    
-    const Edit = pais.find(onu => onu.cod === input_cod);
-    
-    if(Edit){
-        Edit.nome = input_Novonome;
-        Edit.presi = input_NovoPresi;
-    
-        exibirPaises()
-        this.reset()
-    }
-    else{
-        alert("Pais não encontrado!!")
-    };
-
-
-});
 
 
 
