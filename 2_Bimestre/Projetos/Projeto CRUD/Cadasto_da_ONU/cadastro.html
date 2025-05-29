@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>
-            ONU
+            Organização das Nações Unidas
         </h1>
         <nav class="menu">
             <a href="remover.html">Excluir País</a>
@@ -30,23 +30,25 @@
             <fieldset>
         
                 <legend>Cadastro de paises</legend>
-                
-                    <label for="cod">Digite o cod do país</label>
-                    <input type="number" id="cod">
-                    <br>
-    
-                    <label for="nome" >Digite o nome do País</label>
-                    <input type="text"  id="nome">
-                    <br>
-                
-                    <label for="presi">Nome do presidente: </label>
-                    <input type="text" id="presi">
-                    <br>
-                
-                    <label for="Contin">Continente:</label>
-                    <input type="text" id="Contin">
-                    <br>
-                <button type="button" onclick="adicionarPais()" class="btn btn-primary">Add Pais</button>
+                    <div class="flex">
+                            <input type="number" id="cod" placeholder="Código do país">
+                            <br>
+            
+                            
+                            <input type="text"  id="nome" placeholder="Nome do país">
+                            <br>
+                        
+                        
+                            <input type="text" id="presi" placeholder="Presidente:">
+                            <br>
+                        
+                            
+                            <input type="text" id="Contin" placeholder="Continente:">
+                            <br>
+        
+                        <button type="button" onclick="adicionarPais()" class="btn btn-primary">Add Pais</button>
+                    </div>
+                    
     
              </fieldset>
             

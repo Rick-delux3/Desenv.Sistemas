@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>ONU</h1>
+        <h1>Organização das Nações Unidas</h1>
         <nav class="menu">
             <a href="editar.html">Editar Pais</a>
             <a href="cadastro.html">Listagem de Pais</a>
@@ -19,21 +19,23 @@
 
     <form>
         <fieldset>
-            <div class="exibir"></div>
-            <legend>Excluir Países</legend>
-    
-            <label for="pais">Digite o código:</label>
-            <input type="text" class="pais">
-            <br>
-
-            <button type="button" onclick="RemoverPais()" class="btn btn-danger mt-2">Excluir</button>
-            <div class="resultadoExcluir mt-3"></div>
-
-            
-          
+            <legend>Excluir País</legend>
+            <div class="flex">
+                <label for="pais">Digite o código:</label>
+                <input type="text" class="pais">
+                <br>
+                
+                <button type="button" onclick="RemoverPais()" class="btn btn-danger mt-2">Excluir</button>
+                <div class="resultadoExcluir mt-3"></div>
+            </div>
         </fieldset>
     </form>
-
+    
+        <section class="listagem">
+            <h2>Países Cadastrados</h2>
+            <div class="exibir"></div>
+        </section>
+        
 
 
     <script src="JS/exclusão.js"></script>

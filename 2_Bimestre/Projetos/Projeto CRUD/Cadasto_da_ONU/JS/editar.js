@@ -1,6 +1,5 @@
-let pais = JSON.parse(localStorage.getItem("paises"));
+let paises = JSON.parse(localStorage.getItem("paises"));
 
-console.log(pais);
 
 function exibirPaises() {
   let output = document.querySelector(".exibir");
@@ -26,7 +25,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
   let input_Novonome = document.querySelector("#EditNome").value;
   let input_NovoPresi = document.querySelector("#editPresi").value;
 
-  const Edit = pais.find(onu => onu.cod === input_cod);
+  const Edit = paises.find(onu => onu.cod === input_cod);
 
   if (Edit) {
     Edit.nome = input_Novonome;
