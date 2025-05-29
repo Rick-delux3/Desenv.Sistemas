@@ -37,7 +37,7 @@ h1:hover{
 
 
 .menu{
-    background-color: var(--cor-principal);
+    background-color: var(--cor-segundaria);
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@ h1:hover{
 
 .menu > a{
     text-decoration: none;
-    background-color: var(--cor-quintenaria);
+    background-color: var(--cor-terciaria);
     color: var(--cor-sexta);
     padding: 5px;
     border-radius: 5px;
@@ -139,7 +139,7 @@ input::placeholder{
 .card {
     display: inline-block;
   background-color: var(--cor-quintenaria);
-  color: var(--cor-setma);
+  color: var(--cor-segundaria);
   padding: 15px;
   width: 280px;
   border-radius: 10px;
