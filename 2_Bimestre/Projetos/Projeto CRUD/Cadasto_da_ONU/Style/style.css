@@ -44,6 +44,7 @@ h1:hover{
     gap:20px;
     box-shadow: 0px 5px 15px var(--cor-quartenaria);
     border-radius: 4px;
+    box-shadow: 7px 5px 3px var(--cor-quintenaria);
 }
 
 .menu > a{
@@ -85,7 +86,7 @@ form{
 }
 form > fieldset{
     border: 2px solid var(--cor-quartenaria);
-  border-radius: 12px;
+  border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
   background-color: white;
@@ -143,7 +144,7 @@ input::placeholder{
   padding: 15px;
   width: 280px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 8px 4px 2px var(--cor-principal);
   font-family: Arial, sans-serif;
   transition: transform 0.2s ease;
 

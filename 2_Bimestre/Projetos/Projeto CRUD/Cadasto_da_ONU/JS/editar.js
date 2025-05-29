@@ -32,7 +32,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
     Edit.presi = input_NovoPresi;
 
     // Salva o vetor atualizado
-    localStorage.setItem("paises", JSON.stringify(pais));
+    localStorage.setItem("paises", JSON.stringify(paises));
 
     alert("País editado com sucesso!");
 

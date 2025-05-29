@@ -8,7 +8,7 @@ let paises = [
 ];
 
 function exibirPaises() {
-    let output = document.querySelector(".exibir"); // Corrigido
+    let output = document.querySelector(".exibir"); 
     output.innerHTML = "";
 
     paises.forEach(onu => {
