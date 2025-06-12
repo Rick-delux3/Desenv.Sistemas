@@ -8,38 +8,82 @@
 </head>
 <body>
     <style>
+        body{
+            background-color: white;
+        }
+        header{
+            border: 3px solid black;
+            max-width: 100%;
+            text-align: center;
+            background-color: #011C26;
+        }
+        h1{
+            color: white;
+        }
+        #container1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            background-color: #011C26;
+            height: 100px;
+            margin-top: 50px;
+            border: 3px solid black;
+            border-radius: 20px;
+            
+        }
         select{
             padding: 10px;
             font-size: 16px;
             margin-bottom: 25px;
+            border-radius: 20px;
+            background-color: #0378A6;
+            box-shadow: 5px 3px 1px black;
+            margin: auto;
+        }
+    
+        option{
+            color: #04C4D9;
         }
         #country-info{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
-        div{
+        .country-card{
             border: 2px solid black;
             border-radius: 10px;
             padding: 15px;
             text-align: center;
-            background-color: purple;
+            background-color: #049DBF;
+            box-shadow: 5px 3px 1px black;
         }
-        div img{
+        .country-card img{
             width: 100%;
             margin-bottom: 10px;
             box-shadow: 5px 3px 1px black;
         }
     </style>
-    <h1>Seleção de Continentes</h1>
-    <select name="região" id="region-select" onchange="filtroRegiao()">
-        <option value="select">Selecione uma região</option>
-        <option value="Africa">África</option>
-        <option value="Americas">Americas</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europa</option>
-    </select>
-    <button onclick="filtroRegiao()"></button>
+
+    <header>
+        <h1>Seleção de Continentes</h1>
+    </header>
+    <div id="container1">
+        <div class="item">
+            <select name="região" id="region-select" onchange="filtroRegiao()">
+                <option  value="select">Selecione uma região</option>
+                <option value="Africa">África</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europa</option>
+            </select>
+        </div>
+
+    </div>
     <div id="country-info">
 
     </div>

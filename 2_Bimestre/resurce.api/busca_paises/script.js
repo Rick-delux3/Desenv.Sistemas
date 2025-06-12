@@ -14,10 +14,11 @@ function getCountry(){
     })
     .then(dados=>{
         let exibir = dados.map(pais=>{
-            return `<div>
+            return `<div class="country-card">
             <h2>${pais.name.official}</h2>
             <h2>${pais.capital}</h2>
-            <img src="${pais.flags.png}" alt="${pais.flags.alt}">`
+            <img src="${pais.flags.png}" alt="${pais.flags.alt}">
+            </div>`
             
         }).join("");
         output.innerHTML = exibir;
@@ -55,10 +56,11 @@ function filtroRegiao(){
     })
     .then(dados=>{
         let exibir = dados.map(pais=>{
-            return `<div>
+            return `<div class="country-card">
             <h2>${pais.name.common}</h2>
             <p>Região:${pais.region}</p>
-            <img src="${pais.flags.png}" alt="${pais.flags.alt}">`
+            <img src="${pais.flags.png}" alt="${pais.flags.alt}">
+            </div>`
             
         }).join("");
         output.innerHTML = exibir;
