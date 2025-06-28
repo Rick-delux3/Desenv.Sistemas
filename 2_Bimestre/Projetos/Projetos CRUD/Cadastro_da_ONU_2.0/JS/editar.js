@@ -1,4 +1,4 @@
-let paises = JSON.parse(localStorage.getItem("paises"));
+let paises = JSON.parse(localStorage.getItem("cadastro"));
 
 
 function exibirPaises() {
@@ -10,8 +10,10 @@ function exibirPaises() {
       <div class="card">
         <h3>${onu.nome}</h3>
         <p><strong>Código:</strong> ${onu.cod}</p>
-        <p><strong>Presidente:</strong> ${onu.presi}</p>
-        <p><strong>Continente:</strong> ${onu.conti}</p>
+        <p><strong>Presidente:</strong> ${onu.capital}</p>
+        <p><strong>Continente:</strong> ${onu.bandeira}</p>
+        <p><strong>Continente:</strong> ${onu.capital}</p>
+        
       </div>
     `;
   });
