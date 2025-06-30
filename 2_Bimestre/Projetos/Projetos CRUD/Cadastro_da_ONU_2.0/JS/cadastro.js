@@ -1,4 +1,4 @@
-let paises = []
+let paises = [] 
 
 function cadastrarPaises() {
   let nomeInput = document.querySelector("#nome").value.trim()
@@ -12,14 +12,16 @@ function cadastrarPaises() {
       return resp.json();
     })
     .then(dados => {
+        
       let paisData = dados[0];
       let nome = paisData.name.common;
       let capital = paisData.capital ? paisData.capital[0] : "Desconhecida";
       let regiao = paisData.region;
-      let bandeira = paisData.flag;
+      let bandeira = paisData.flags.png;
+      let pngalt = paisData.flags.alt;
 
 
-      let DadosSalvos = {cod, nome, capital, regiao, bandeira };
+      let DadosSalvos = {cod, nome, capital, regiao, bandeira, pngalt };
       paises.push(DadosSalvos);
 
       document.querySelector("#cap").value = capital;

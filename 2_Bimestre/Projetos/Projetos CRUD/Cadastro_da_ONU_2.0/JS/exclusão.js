@@ -1,4 +1,4 @@
-let paises = JSON.parse(localStorage.getItem("paises"));
+let paises = JSON.parse(localStorage.getItem("cadastro"));
 
 function exibirPaises() {
   let output = document.querySelector(".exibir");
@@ -20,7 +20,7 @@ function exibirPaises() {
 function RemoverPais(){
     let input_pais = document.querySelector(".pais").value.trim();
 
-    let indice = paises.findIndex(pais => pais.cod == Number(input_pais));
+    let indice = paises.findIndex(pais => paises.cod == Number(input_pais));
 
     let output = document.querySelector(".resultadoExcluir");
 
@@ -28,7 +28,7 @@ function RemoverPais(){
 
         paises.splice(indice,1);
 
-        localStorage.setItem('paises', JSON.stringify(paises));
+        localStorage.setItem("cadastro", JSON.stringify(paises));
     
         output.innerHTML = `<h3 style="color:green"> País ${input_pais} deserdado com sucesso!! </h3>`
         exibirPaises()

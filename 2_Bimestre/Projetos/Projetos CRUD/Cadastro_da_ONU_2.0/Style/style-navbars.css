@@ -1,0 +1,41 @@
+:root{
+    --cor-principal: #182859;
+    --cor-segundaria: #263F8C;
+    --cor-terciaria: #4375D9;
+    --cor-quartenaria: #4886D9;
+    --cor-quintenaria: #262626;
+    --cor-sexta: #D1F1FD;
+    --cor-setma: #006A94;
+    --cor-oitava: #003C54;
+
+}
+
+.custom-navbar{
+    color: var(--cor-principal);
+    background-color: var(--cor-principal);
+    position: sticky;
+    z-index: 999;
+}
+
+.custom-link{
+    color: var(--cor-sexta)!important;
+    transition: color 0.4s ease!important;
+}
+.custom-link:hover{
+    color: var(--cor-quartenaria)!important;
+}
+button.costum-button{
+    color: var(--cor-quintenaria)!important;
+    background-color: var(--cor-terciaria) !important;
+    text-align: center !important;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+
+}
+
+button.costum-button:hover{
+    transform: scale(1.05);
+}
+button.costum-button:active{
+    transform: scale(0.9);
+}

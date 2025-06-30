@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/style_index.css">
+    <link rel="stylesheet" href="Style/style-navbars.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Onu</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="custom-navbar navbar navbar-expand-lg fixed-top ">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+                <img src="https://logodownload.org/wp-content/uploads/2015/05/onu-logo-8.png" alt="Bootstrap" width="40" height="30">
             </a>
         </div>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="custom-link navbar-brand" href="#">ONU</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,23 +26,14 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="custom-link nav-link active" aria-current="page" href="CRUD/exibir.html">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="custom-link nav-link" href="CRUD/criar.html">Cadastrar Países</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="custom-link nav-link" href="#">Reuniões</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="CRUD/exibir.html">Países</a></li>
-                            <li><a class="dropdown-item" href="CRUD/criar.html">Cadastrar Países</a></li>
-                            <li><a class="dropdown-item" href="#">Leis</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -50,31 +42,42 @@
     </nav>
 
 
-    <section class="custom-contain">
-        <div class="itens1">
-            <div class="subitem">
-                <h2></h2>
-                <p></p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+    <section class="pai">
+        <div class="custom-contain1">
+            <div class="boasvindas"><h2>Bem-vindo ao Sistema de Cadastro de Países da ONU</h2></div>
         </div>
-        <div class="itens2">
-            <div class="subitem2">
-                <h2></h2>
-                <p></p>
+        
+        <div class="custom-contain2">
+            <div class="itens1">
+                <h2>Sobre:</h2>
+                
+                
+                    <p>Este é um projeto desenvolvido para simular um sistema de gerenciamento de informações sobre os países membros da Organização das Nações Unidas (ONU).</p>
+                    <ul class="list">
+                        <li>Cadastrar novos países utilizando dados reais da API RestCountries;</li>
+                        <li>Visualizar todos os países cadastrados em Cartões dinamicos</li>
+                        <li>Editar as informações de um país utilizando seu código de registro;</li>
+                        <li>Excluir registros de forma prática e segura.</li>
+                    </ul>
+                </div>
+                
+            
+            <div class="itens2">
+
+                <h2>Sobre a ONU</h2>
+                
+                    <p>A Organização das Nações Unidas é uma entidade internacional criada em 1945, com o objetivo de promover a paz, a segurança, os direitos humanos e o desenvolvimento sustentável em todo o mundo. Composta por quase todos os países do planeta, a ONU é um símbolo de cooperação internacional.</p>
+                
             </div>
+             <div class="itens3">
+
+                 <h2>Explore!!</h2>
+                
+                    <p>Use o menu de navegação para acessar a área de cadastro de países, visualizar a lista de membros registrados e interagir com todas as funcionalidades do sistema.</p>
+               
+             </div>
+             
         </div>
-         <div class="itens3">
-            <div class="subitem3">
-                <h2></h2>
-                <p></p>
-            </div>
-         </div>
     </section>
 
 
