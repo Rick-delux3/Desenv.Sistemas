@@ -1,4 +1,4 @@
-let paises = JSON.parse(localStorage.getItem("cadastro"));
+let paises = JSON.parse(localStorage.getItem("cadastro")) || [];
 
 
 function exibirPaises() {
