@@ -19,10 +19,13 @@
 
 .custom-link{
     color: var(--cor-sexta)!important;
-    transition: color 0.4s ease!important;
+    transition: color 0.4s ease, transform 0.4s ease !important;
 }
 .custom-link:hover{
     color: var(--cor-quartenaria)!important;
+}
+.custom-link:active{
+    transform: scale(1.05)!important;
 }
 button.costum-button{
     color: var(--cor-quintenaria)!important;

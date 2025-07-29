@@ -1,4 +1,4 @@
-let paises = [] 
+let paises = JSON.parse(localStorage.getItem("cadastro")) || [];
 
 function cadastrarPaises() {
   let nomeInput = document.querySelector("#nome").value.trim()

@@ -23,10 +23,15 @@ form {
     max-width: 500px;
     margin: 30px auto;
     margin-top: 80px;
-    background-color: #4375D9;
+    background-color: var(--cor-segundaria);
     padding: 25px;
-    border-radius: 9px;
+    border-radius: 20px;
     box-shadow: 7px 5px 3px var(--cor-quintenaria);
+    transition: transform 0.5s ease;
+
+}
+form:hover{
+    transform: scale(1.09);
 }
 
 form>fieldset {
@@ -34,8 +39,9 @@ form>fieldset {
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: var(--cor-quartenaria);
     max-width: 150%;
+    color: var(--cor-sexta);
 }
 
 fieldset>legend {
@@ -43,6 +49,7 @@ fieldset>legend {
     font-size: 30px;
     margin-bottom: 20px;
 }
+
 
 .flex {
     display: flex;
@@ -87,9 +94,10 @@ input::placeholder {
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    background-color: #049DBF;
+    background-color: var(--cor-segundaria);
     box-shadow: 5px 3px 1px black;
     transition: transform 0.5s ease;
+    color: #D1F1FD ;
 
 }
 

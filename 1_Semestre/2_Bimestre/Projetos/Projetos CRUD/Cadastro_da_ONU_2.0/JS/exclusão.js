@@ -1,4 +1,4 @@
-let paises = JSON.parse(localStorage.getItem("cadastro"));
+let paises = JSON.parse(localStorage.getItem("cadastro")) || [];
 
 function exibirPaises() {
   let output = document.querySelector(".exibir");
@@ -8,9 +8,10 @@ function exibirPaises() {
     output.innerHTML += `
       <div class="card">
         <h3>${onu.nome}</h3>
+        <h3>${onu.capital}</h3>
         <p><strong>Código:</strong> ${onu.cod}</p>
-        <p><strong>Presidente:</strong> ${onu.presi}</p>
-        <p><strong>Continente:</strong> ${onu.conti}</p>
+        <img src="${onu.bandeira}" alt="${onu.pngalt}">
+        <p><strong>Continente:</strong> ${onu.regiao}</p> 
       </div>
     `;
   });
@@ -20,7 +21,7 @@ function exibirPaises() {
 function RemoverPais(){
     let input_pais = document.querySelector(".pais").value.trim();
 
-    let indice = paises.findIndex(pais => paises.cod == Number(input_pais));
+    let indice = paises.findIndex(pais => pais.cod == Number(input_pais));
 
     let output = document.querySelector(".resultadoExcluir");
 

@@ -41,9 +41,16 @@ div.boasvindas{
     text-align: center;
     color: var(--cor-sexta);
     background-color: var(--cor-oitava);
-    padding: 25px;
+    padding: 30px;
     border-radius: 5px 40px;
     box-shadow: 5px 7px 9px var(--cor-quintenaria);
+    cursor: pointer;
+    transition: color 0.5s ease, transform 0.7s ease, background-color 0.5s ease;
+}
+.boasvindas:hover{
+    transform: scale(0.9);
+    background-color:var(--cor-quintenaria) ;
+    color: var(--cor-quartenaria);
 }
 
 .custom-contain2{
@@ -67,13 +74,15 @@ div.boasvindas{
     padding: 30px;
     font-size: 20px;
     font-family: Roboto Condensed;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, background-color 0.6s ease, color 0.6s ease;
 }
 .itens1:hover,
 .itens2:hover,
 .itens3:hover{
     transform: scale(0.9);
     cursor: pointer;
+    background-color: var(--cor-sexta);
+    color: var(--cor-quintenaria);
 }
 .itens1 > h2,
 .itens2 > h2,
@@ -82,10 +91,16 @@ div.boasvindas{
     text-align: center;
     padding:10px;
 }
+.itens1 > h2:hover,
+.itens2 > h2:hover,
+.itens3 > h2:hover{
+    color: var(--cor-quintenaria);
+    
+}
 .list{
     margin: auto;
     padding: 0;
-    width: 400px;
+    width: 350px;
     
 }
 .list > li{
