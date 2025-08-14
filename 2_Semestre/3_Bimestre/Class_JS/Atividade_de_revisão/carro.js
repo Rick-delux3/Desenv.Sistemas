@@ -8,6 +8,6 @@ class Carro extends Veiculo {
     };
 
     abrirPortas(){
-        return "A porta abriu!!"
+        return "porta abriu!!"
     }
 };

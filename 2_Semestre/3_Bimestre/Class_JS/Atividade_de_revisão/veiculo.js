@@ -29,6 +29,6 @@ class Veiculo{
     }
 
     ligar(){
-        return "O veículo foi ligado!!";
+        return "foi ligado!!";
     }
 }
