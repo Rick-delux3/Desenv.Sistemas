@@ -8,9 +8,20 @@
 </head>
 <body>
     <h1>API do Pokemon</h1>
-    <input type="text" id="pkm_name" placeholder="Digite um Pokemon">
-    <button onclick="buscarPokemon()">Buscar</button>
-    <div id="resultado">
+    <div>
+        <div>
+            <input type="text" id="pkm_name1" placeholder="Digite um Pokemon">
+            <button onclick="buscarPokemon1()">Buscar</button>
+            <div id="resultado1">
+            </div>
+        </div>
+        <div>
+            <input type="text" id="pkm_name2" placeholder="Digite um Pokemon">
+            <button onclick="buscarPokemon2()">Buscar</button>
+            <div id="resultado2">
+                <progress  value="100" max="120"></progress>
+            </div>
+        </div>
     </div>
     <script src="js/Pokemon.js"></script>
     <script src="js/main.js"></script>
