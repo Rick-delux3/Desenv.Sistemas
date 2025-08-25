@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Exemplo</title>
 </head>
 <body>
-    <h1>API do Pokemon</h1>
-    <div>
-        <div>
-            <input type="text" id="pkm_name1" placeholder="Digite um Pokemon">
-            <button onclick="buscarPokemon1()">Buscar</button>
-            <div id="resultado1">
+    <div id="father">
+        <header>
+            <h1>API do Pokemon</h1>
+        </header>
+
+
+        <div class="father1">
+            <div class="contain1">
+                <progress id="hp1" value="0" max="100"></progress>
+                <input type="text" id="pkm_name1" placeholder="Digite um Pokemon">
+                <button onclick="buscarPokemon1()">Buscar</button>
+                <div id="resultado1">...
+                </div>
+            </div>
+    
+            <div class="contain2">
+                <progress id="hp2" value="0" max="100"></progress>
+                <input type="text" id="pkm_name2" placeholder="Digite um Pokemon">
+                <button onclick="buscarPokemon2()">Buscar</button>
+                <div id="resultado2">
+                </div>
             </div>
         </div>
-        <div>
-            <input type="text" id="pkm_name2" placeholder="Digite um Pokemon">
-            <button onclick="buscarPokemon2()">Buscar</button>
-            <div id="resultado2">
-                <progress  value="100" max="120"></progress>
-            </div>
+        <div class="father2">
+            <h2>Log de batalha</h2>
+            <button onclick="batalhar()">Iniciar Batalha</button>
+            <div id="resultadoBatalha1">...</div>
+            <div id="resultadoLog">...</div>
         </div>
     </div>
     <script src="js/Pokemon.js"></script>
