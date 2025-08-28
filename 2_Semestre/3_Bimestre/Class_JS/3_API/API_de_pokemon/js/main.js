@@ -29,7 +29,9 @@ function buscarPokemon1(){
         console.log(p.exibirDados());
 
         document.getElementById("resultado1").innerHTML = 
-        `<h1>${p.nome}</h1>
+        `
+        <progress id="hp1" value="0" max="100"></progress>
+        <h1>${p.nome}</h1>
         <ul>
             <li>Tipo: ${p.tipo} </li>
             <li>Peso: ${p.peso} </li>
@@ -76,7 +78,9 @@ function buscarPokemon2(){
         console.log(po.exibirDados());
 
         document.getElementById("resultado2").innerHTML = 
-        `<h1>${po.nome}</h1>
+        `
+        <progress id="hp2" value="0" max="100"></progress>
+        <h1>${po.nome}</h1>
         <ul>
             <li>Tipo: ${po.tipo} </li>
             <li>Peso: ${po.peso} </li>
@@ -134,7 +138,7 @@ function batalhar(){
                 hp2-=dano
                 document.getElementById("hp2").value-=dano;
     
-                log+= `<p>${pokemon1.nome} atacou o ${pokemon2.nome} e causou ${dano} de dano`;
+                log+= `<p>${pokemon1.nome} molestou o ${pokemon2.nome} e causou ${dano} de abuso`;
     
     
             }
@@ -144,11 +148,11 @@ function batalhar(){
                 hp2-=dano
                 document.getElementById("hp1").value-=dano;
     
-                log+= `<p>${pokemon2.nome} atacou o ${pokemon1.nome} e causou ${dano} de dano`;
+                log+= `<p>${pokemon2.nome} atacou ${pokemon1.nome} e causou ${dano} de dano`;
     
-                document.getElementById("resultadoLog").innerHTML = log;
-                turno++
             }
+            document.getElementById("resultadoLog").innerHTML = log;
+            turno++
         }
         else{
             clearInterval()

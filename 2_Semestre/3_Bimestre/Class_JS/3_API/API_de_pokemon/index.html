@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Exemplo</title>
 </head>
 <body>
@@ -14,24 +15,24 @@
         </header>
 
 
-        <div class="father1">
-            <div class="contain1">
-                <progress id="hp1" value="0" max="100"></progress>
-                <input type="text" id="pkm_name1" placeholder="Digite um Pokemon">
-                <button onclick="buscarPokemon1()">Buscar</button>
+        <div class="father1 row d-flex justify-content-center w-50 h-50">
+            <div class="contain1 col-5 d-flex flex-column">
+                <h2>Pokemon1</h2>
+                <input type="text" id="pkm_name1" placeholder="Digite um Pokemon" class="form-control-sm mt-sm-3">
+                <button onclick="buscarPokemon1()" class="btn btn-primary mt-2">Buscar</button>
                 <div id="resultado1">...
                 </div>
             </div>
     
-            <div class="contain2">
-                <progress id="hp2" value="0" max="100"></progress>
-                <input type="text" id="pkm_name2" placeholder="Digite um Pokemon">
-                <button onclick="buscarPokemon2()">Buscar</button>
+            <div class="contain2 col-5 d-flex flex-column">
+                <h2>pokemon2</h2>
+                <input type="text" id="pkm_name2" placeholder="Digite um Pokemon" class="form-control-sm mt-sm-3    ">
+                <button onclick="buscarPokemon2()" class="btn btn-outline-info mt-2">Buscar</button>
                 <div id="resultado2">
                 </div>
             </div>
         </div>
-        <div class="father2">
+        <div class="father2 col-3" >
             <h2>Log de batalha</h2>
             <button onclick="batalhar()">Iniciar Batalha</button>
             <div id="resultadoBatalha1">...</div>
@@ -40,5 +41,6 @@
     </div>
     <script src="js/Pokemon.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

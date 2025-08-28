@@ -1,11 +1,22 @@
-div#father{
+:root{
+    --cor-primairia: #F22613;
+    --cor-segundaria: #F2CE1B;
+    --cor-terciaria:#F2BF27;
+    --cor-quartenaria:#D98723;
+    --cor-quintenaria:#000000;
+    --cor-sextiaria: #CD4513;
 
+}
+
+
+div#father{
+    
     display: flex;
     flex-direction: column;
     height: 900px;
     max-width: 100%;
-    border: 3px solid blue;
     margin: auto;
+    background-color: white;
 }
 
 
@@ -13,8 +24,8 @@ header{
     height: 100px;
     text-align: center;
     box-shadow: 3px 3px 1px solid black;
-    background-color: gray;
-    margin-top: -20px;
+    background-color: var(--cor-segundaria);
+    
 }
 
 div.father1{
@@ -22,7 +33,19 @@ div.father1{
     gap: 60px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    border: 3px solid green;
-    height: 300px;
-    max-width: 100%;
+    height: 400px;
+    margin: auto;
+}
+.contain1, .contain2{
+    background-color:var(--cor-terciaria);
+    width:400px;
+    border-radius: 20px;
+}
+.contain1 > h2, .contain2 > h2{
+    background-color: var(--cor-quartenaria);
+    margin-left: -12px;
+    margin-right: -12px;
+    text-align: center;
+    margin: none;
+    
 }
