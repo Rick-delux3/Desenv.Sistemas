@@ -24,7 +24,7 @@ header{
     height: 59px;
     text-align: center;
     box-shadow: 3px 3px 1px black;
-    background-color: var(--cor-segundaria);
+    background-color: var(--cor-primairia);
     
 }
 
@@ -37,10 +37,10 @@ div.father1{
     margin: auto;
 }
 .contain1, .contain2{
-    background-color:var(--cor-segundaria);
+    background-color:var(--cor-terciaria);
     width:400px;
     border-radius: 5px;
-    box-shadow: 1px 2px 3px  var(--cor-quintenaria);
+    box-shadow: 3px 4px 3px  var(--cor-quintenaria);
 }
 .contain1 > h2, .contain2 > h2{
     background-color: var(--cor-sextiaria);
