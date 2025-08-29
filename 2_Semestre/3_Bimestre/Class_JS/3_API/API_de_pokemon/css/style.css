@@ -1,10 +1,10 @@
 :root{
-    --cor-primairia: #F22613;
-    --cor-segundaria: #F2CE1B;
-    --cor-terciaria:#F2BF27;
-    --cor-quartenaria:#D98723;
-    --cor-quintenaria:#000000;
-    --cor-sextiaria: #CD4513;
+    --cor-primairia: #222222;
+    --cor-segundaria: #FFFFFF;
+    --cor-terciaria:#FFCB05;
+    --cor-quartenaria:#3B4CCA;
+    --cor-quintenaria:#FF1C1C;
+    --cor-sextiaria: #FF3131;
 
 }
 
@@ -16,14 +16,14 @@ div#father{
     height: 900px;
     max-width: 100%;
     margin: auto;
-    background-color: white;
+    background-color: var(--cor-segundaria);
 }
 
 
 header{    
-    height: 100px;
+    height: 59px;
     text-align: center;
-    box-shadow: 3px 3px 1px solid black;
+    box-shadow: 3px 3px 1px black;
     background-color: var(--cor-segundaria);
     
 }
@@ -37,15 +37,17 @@ div.father1{
     margin: auto;
 }
 .contain1, .contain2{
-    background-color:var(--cor-terciaria);
+    background-color:var(--cor-segundaria);
     width:400px;
-    border-radius: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px  var(--cor-quintenaria);
 }
 .contain1 > h2, .contain2 > h2{
-    background-color: var(--cor-quartenaria);
+    background-color: var(--cor-sextiaria);
     margin-left: -12px;
     margin-right: -12px;
     text-align: center;
     margin: none;
+    border-radius: 3px 3px 20px 20px;
     
 }
