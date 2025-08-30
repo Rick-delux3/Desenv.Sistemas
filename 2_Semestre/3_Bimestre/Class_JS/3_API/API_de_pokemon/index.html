@@ -10,21 +10,23 @@
 </head>
 <body>
     <div id="father">
-        <header>
-            <h1>API do Pokemon</h1>
+        <header class="header1">
+            <h1>Pokemon Fight</h1>
         </header>
 
 
-        <div class="father1 row d-flex justify-content-center w-50 h-50">
-            <div class="contain1 col-5 d-flex flex-column">
+        <div class="father1 row d-flex justify-content-center w-100 h-50">
+            <div class="contain1 col-3 d-flex flex-column">
                 <h2>Pokemon1</h2>
                 <input type="text" id="pkm_name1" placeholder="Digite um Pokemon" class="form-control-sm mt-sm-3">
                 <button onclick="buscarPokemon1()" class="mt-2" id="btn1">Buscar</button>
                 <div id="resultado1">...
                 </div>
             </div>
-            
-            <div class="contain2 col-5 d-flex flex-column">
+            <div class="img-contain col-2">
+                <img src="https://static.vecteezy.com/system/resources/previews/024/382/912/large_2x/vs-versus-battle-icon-sign-symbol-black-red-design-transparent-background-free-png.png" alt="VS" class="img-fluid h-50 mt-xl-5">
+            </div>
+            <div class="contain2 col-3 d-flex flex-column">
                 <h2>pokemon2</h2>
                 <input type="text" id="pkm_name2" placeholder="Digite um Pokemon" class="form-control-sm mt-sm-3    ">
                 <button onclick="buscarPokemon2()" class="mt-2" id="btn2">Buscar</button>
@@ -32,11 +34,15 @@
                 </div>
             </div>
         </div>
-        <div class="father2 col-3" >
-            <h2>Log de batalha</h2>
-            <button onclick="batalhar()">Iniciar Batalha</button>
-            <div id="resultadoBatalha1">...</div>
-            <div id="resultadoLog">...</div>
+        <div class="father2 row d-flex justify-content-center w-100" >
+            <div class="col-10 battle-log">
+                <header class="battle-header">
+                    <h2>Log de batalha</h2>
+                </header>
+                <button onclick="batalhar()">Iniciar Batalha</button>
+                <div id="resultadoBatalha1">...</div>
+                <div id="resultadoLog">...</div>
+            </div>
         </div>
     </div>
     <script src="js/Pokemon.js"></script>

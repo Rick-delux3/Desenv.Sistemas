@@ -20,11 +20,13 @@ div#father{
 }
 
 
-header{    
+.header1{    
     height: 59px;
     text-align: center;
     box-shadow: 3px 3px 1px black;
     background-color: var(--cor-primairia);
+    color:var(--cor-segundaria);
+    font-family: Audiowide;
     
 }
 
@@ -35,12 +37,16 @@ div.father1{
     justify-content: flex-start;
     height: 400px;
     margin: auto;
+    
 }
 .contain1, .contain2{
     background-color:var(--cor-terciaria);
     width:400px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 3px 4px 3px  var(--cor-quintenaria);
+}
+.img-contain{
+    width: 400px;
 }
 .contain1 > h2, .contain2 > h2{
     background-color: var(--cor-sextiaria);
@@ -48,6 +54,21 @@ div.father1{
     margin-right: -12px;
     text-align: center;
     margin: none;
-    border-radius: 3px 3px 20px 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 5px;
+    
+}
+.battle-log{
+  background: #111; /* fundo escuro estilo arena */
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif; /* ou outra fonte estilo retro */
+  font-size: 14px;
+  padding: 16px;
+  border-radius: 12px;
+  height: 250px;
+  overflow-y: auto; /* scroll se ficar grande */
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+.battle-header{
     
 }

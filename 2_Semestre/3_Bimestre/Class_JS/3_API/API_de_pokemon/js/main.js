@@ -138,7 +138,7 @@ function batalhar(){
                 hp2-=dano
                 document.getElementById("hp2").value-=dano;
     
-                log+= `<p>${pokemon1.nome} molestou o ${pokemon2.nome} e causou ${dano} de abuso`;
+                log += `<div class="alert alert-warning py-1 mb-1">${pokemon1.nome} atacou ${pokemon2.nome} e causou ${dano} de dano!</div>`;
     
     
             }
@@ -148,14 +148,32 @@ function batalhar(){
                 hp2-=dano
                 document.getElementById("hp1").value-=dano;
     
-                log+= `<p>${pokemon2.nome} atacou ${pokemon1.nome} e causou ${dano} de dano`;
+                log += `<div class="alert alert-danger py-1 mb-1">${pokemon2.nome} atacou ${pokemon1.nome} e causou ${dano} de dano!</div>`;
     
             }
             document.getElementById("resultadoLog").innerHTML = log;
             turno++
         }
         else{
-            clearInterval()
+            clearInterval(intervalo)
+            let vencedor;
+
+            if (hp1 <= 0 && hp2 <= 0) {
+
+                log += `<div class="alert alert-secondary text-center fw-bold">🤝 A batalha terminou em EMPATE!</div>`;
+            
+            } else if (hp1 <= 0) {
+
+                vencedor = pokemon2.nome;
+                
+                log += `<div class="alert alert-success text-center fw-bold">🏆 ${vencedor} venceu a batalha!</div>`;
+            
+            } else {
+                vencedor = pokemon1.nome;
+                log += `<div class="alert alert-success text-center fw-bold">🏆 ${vencedor} venceu a batalha!</div>`;
+            }
+
+            document.getElementById("resultadoLog").innerHTML = log;
         }
 
         
