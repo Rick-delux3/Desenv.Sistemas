@@ -166,11 +166,11 @@ function batalhar(){
 
                 vencedor = pokemon2.nome;
                 
-                log += `<div class="alert alert-success text-center fw-bold">🏆 ${vencedor} venceu a batalha!</div>`;
+                log += `<div class="alert-warning border border-warning fw-bold">🏆 ${vencedor} venceu a batalha!</div>`;
             
             } else {
                 vencedor = pokemon1.nome;
-                log += `<div class="alert alert-success text-center fw-bold">🏆 ${vencedor} venceu a batalha!</div>`;
+                log += `<div class="alert-warning border border-warning fw-bold">🏆 ${vencedor} venceu a batalha!</div>`;
             }
 
             document.getElementById("resultadoLog").innerHTML = log;

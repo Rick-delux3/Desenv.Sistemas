@@ -3,9 +3,16 @@
     --cor-segundaria: #FFFFFF;
     --cor-terciaria:#FFCB05;
     --cor-quartenaria:#3B4CCA;
-    --cor-quintenaria:#FF1C1C;
+    --cor-quintenaria:#8C082C;
     --cor-sextiaria: #FF3131;
 
+}
+body{
+    background: linear-gradient(to right, #3B4CCA, #FFCB05); 
+  /* azul → amarelo (clássico Pokémon) */
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -17,6 +24,8 @@ div#father{
     max-width: 100%;
     margin: auto;
     background-color: var(--cor-segundaria);
+    background: linear-gradient(to right, #3B4CCA, #FFCB05);
+    
 }
 
 
@@ -26,7 +35,7 @@ div#father{
     box-shadow: 3px 3px 1px black;
     background-color: var(--cor-primairia);
     color:var(--cor-segundaria);
-    font-family: Audiowide;
+    font-family:'Orbitron';
     
 }
 
@@ -58,6 +67,23 @@ div.father1{
     border-top-left-radius: 5px;
     
 }
+.contain1 > #btn1, .contain2 > #btn2{
+    background-color: var(--cor-quintenaria);
+    padding: 3px;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--cor-segundaria);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    
+}
+#btn1:hover, #btn2:hover{
+    transform: scale(1.02);
+}
+#btn2:active, #btn1:active{
+    transform: scale(0.95);
+}
 .battle-log{
   background: #111; /* fundo escuro estilo arena */
   color: #fff;
@@ -70,5 +96,20 @@ div.father1{
   box-shadow: 0 0 15px rgba(255,255,255,0.2);
 }
 .battle-header{
+    background-color: var(--cor-quintenaria) !important;
+    border-radius: 12px 12px 0px 0px !important;
     
+}
+.battle-header > h2{
+    color: var(--cor-segundaria);
+    font-family: 'Poppins', sans-serif;
+}
+
+.battle-log .alert {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
