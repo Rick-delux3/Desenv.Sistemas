@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script src="animal.js"></script>
+    <script src="Passaros.js"></script>
+    <script src="mamifero.js"></script>
+    <script>
+        // const a = new Animal();
+        // a.nome = 'Papagaio';
+        // a.patas = 2;
+        // a.regiao = "America do Sul";
+        // document.writeln(a.exibir());
+        // document.writeln(a.emitirSom()); 
+        
+        const b = new Passaros()
+        b.nome = "Papagaio";
+        b.patas = 2;
+        b.regiao = "América do Sul";
+        b.corPena = "Verde";
+        b.voa = true;
+        document.writeln(b.exibir());
+        document.writeln(b.emitirSom("Lorô"));
+        document.writeln(b.exibirVoa(b.voa));
+
+        let cor = prompt("Digite a cor do mamifero");
+        let porte = prompt("Digite o porte do mamifero");
+        let tipo = prompt("Digite o tipo do Mamifero, t(terrestre), a(Áquatico), v(voador)");
+        let nome = prompt("Digite o nome do animal")
+
+        const c = new Mamiferos(cor, porte, tipo)
+        c.nome = nome
+        console.log(`O animal de nome ${c._nome} do porte ${c._porte}`)
+    </script>
+</body>
+</html>

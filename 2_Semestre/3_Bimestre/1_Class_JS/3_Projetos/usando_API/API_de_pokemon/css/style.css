@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Orbitron:wght@400..900&display=swap');
+
+
 :root{
     --cor-primairia: #222222;
     --cor-segundaria: #FFFFFF;
@@ -24,7 +27,7 @@ div#father{
     max-width: 100%;
     margin: auto;
     background-color: var(--cor-segundaria);
-    background: linear-gradient(to right, #3B4CCA, #FFCB05);
+    background: linear-gradient(to right, var(--cor-quintenaria), #FFCB05);
     
 }
 
@@ -35,7 +38,7 @@ div#father{
     box-shadow: 3px 3px 1px black;
     background-color: var(--cor-primairia);
     color:var(--cor-segundaria);
-    font-family:'Orbitron';
+    font-family:'Bungee';
     
 }
 
@@ -58,13 +61,14 @@ div.father1{
     width: 400px;
 }
 .contain1 > h2, .contain2 > h2{
-    background-color: var(--cor-sextiaria);
+    background-color: var(--cor-quintenaria);
     margin-left: -12px;
     margin-right: -12px;
     text-align: center;
     margin: none;
     border-top-right-radius: 20px;
     border-top-left-radius: 5px;
+    color: var(--cor-segundaria);
     
 }
 .contain1 > #btn1, .contain2 > #btn2{
