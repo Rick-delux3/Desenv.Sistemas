@@ -181,3 +181,16 @@ function batalhar(){
 
 }
 
+function ReiniciarBatalha(){
+    
+
+    document.getElementById("resultado1").innerHTML = "";
+    document.getElementById("resultado2").innerHTML = "";
+    document.getElementById("resultadoLog").innerHTML = "";
+    document.getElementById("resultadoBatalha1").innerHTML = "";
+
+    
+
+    alert("Arena resetada!");
+}
+

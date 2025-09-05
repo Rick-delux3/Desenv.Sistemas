@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Orbitron:wght@400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
 
 :root{
     --cor-primairia: #222222;
@@ -69,17 +70,19 @@ div.father1{
     border-top-right-radius: 20px;
     border-top-left-radius: 5px;
     color: var(--cor-segundaria);
+    font-family: 'Bungee';
     
 }
 .contain1 > #btn1, .contain2 > #btn2{
     background-color: var(--cor-quintenaria);
-    padding: 3px;
+    padding: 10px;
     font-family: 'Press Start 2P', cursive;
     color: var(--cor-segundaria);
     border-radius: 10px;
     cursor: pointer;
     border: none;
     transition: all 0.3s ease;
+    font-size: 15px;
     
 }
 #btn1:hover, #btn2:hover{
@@ -111,6 +114,37 @@ div.father1{
 
 .battle-log .alert {
   animation: fadeIn 0.6s ease-in-out;
+}
+
+ .btn2{
+    background-color: var(--cor-quartenaria);
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--cor-segundaria);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    width: 300px;
+    font-size: 12px;
+}
+.btn3{
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--cor-segundaria);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    width: 300px;
+    font-size: 12px;
+}
+.btn2:hover, .btn3:hover{
+    transform: scale(1.02);
+}
+.btn2:active, .btn3:active{
+    transform: scale(0.95);
 }
 
 @keyframes fadeIn {

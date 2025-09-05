@@ -41,8 +41,12 @@
             <header class=" col-2 battle-header card-header text-center fw-bold text-warning w-50">
                 <h2>Log de batalha</h2>
             </header>
-            <div class="col-10 battle-log">
-                <button onclick="batalhar()">Iniciar Batalha</button>
+            <div class="col-10 battle-log d-flex flex-column align-items-center justify-content-around">
+                <div>
+                    <button onclick="batalhar()" class="btn2">Iniciar Batalha</button>
+                    <button onclick="ReiniciarBatalha()" class="btn3">Reiniciar</button>
+                </div>
+                <br>
                 <div id="resultadoBatalha1">...</div>
                 <div id="resultadoLog">...</div>
             </div>
