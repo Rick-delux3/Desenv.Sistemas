@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
+
+
+
+:root{
+    --cor-primairia: #222222;
+    --cor-segundaria: #FFFFFF;
+    --cor-terciaria:#FFCB05;
+    --cor-quartenaria:#3B4CCA;
+    --cor-quintenaria:#8C082C;
+    --cor-sextiaria: #FF3131;
+    --cor-amarelo2: #F2B705;
+    --cor-amarelo3: #BF9004;
+    --cor-azul2: #3F61A6;
+}

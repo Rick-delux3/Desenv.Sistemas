@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forms-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <h1>Pokemon Fight</h1>
+
+        <nav>
+            <a href="lista_treinadores.html">Listar Treinadores</a>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
+    <main id="father">
+        <div class="contain1">
+            <div><img src="" alt=""></div>
+            <div>
+                <h2>Pokemon já cadastrado?</h2>
+                <a href="batalhas.html"></a>
+            </div>
+            <div>
+                <h2>Cadastro do Treinador</h2>
+                <form id="formTreinador">
+                    <label for="name">nome</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="last_name">sobrenome</label>
+                    <input type="text" name="last_name" id="last_name">
+
+                    <label for="regiao">Região</label>
+                    <input type="text" name="regiao" id="regiao">
+
+                    <label for="bio">Biografia</label>
+                    <textarea name="bio" id="bio"></textarea>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/classes/treinadores.js"></script>
+    <script src="js/mains/main_cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
