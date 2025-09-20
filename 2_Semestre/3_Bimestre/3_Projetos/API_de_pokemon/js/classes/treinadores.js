@@ -33,7 +33,7 @@ class Treinador{
 
 
     static exibirTreinadores(){
-        return `<div class="card">
+        return `<div class="card d-flex flex-column">
                     <h1 id="nome">${this.nome} ${this.sobrenome}</h1>
                     <div class="dados">
                         <p><strong>Região:</strong> ${this.regiao}</p>

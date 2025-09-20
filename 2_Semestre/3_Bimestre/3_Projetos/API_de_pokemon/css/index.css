@@ -15,3 +15,56 @@
     --cor-amarelo3: #BF9004;
     --cor-azul2: #3F61A6;
 }
+
+header{
+    background-color: var(--cor-amarelo3);
+    font-family: 'Bungee';
+    padding: 10px;
+    font-size: 25px;
+
+}
+div.contain1{
+    background-color: var(--cor-azul2);
+    width: 1100px;
+    height: 65vh;
+    margin-top: 10vh;
+    border-radius: 10px;
+    margin-bottom: 15vh;
+    
+}
+
+.subcontain{
+    background-color: var(--cor-amarelo2);
+    height: 60vh;
+    width: 35vh;
+    font-size: 14px;
+    margin-left: -30px;
+    border-radius: 15px;
+
+}
+.subcontain > p{
+    font-family: 'Orbitron';
+}
+.subcontain > h2{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    margin-left: -12px;
+    margin-right: -12px;
+    font-family: 'Bungee';
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 3px 0px var(--cor-amarelo3);
+}
+div.contain2{
+    border: 3px solid blue;
+    width: 1100px;
+    margin-bottom: 10px;
+    height: 25vh;
+
+}
+
+
+.a1, .a2, .a3{
+    background-color: var(--cor-amarelo2)
+}
