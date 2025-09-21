@@ -9,35 +9,45 @@
 
 </head>
 <body>
-    <header>
+    <header class="d-flex justify-content-between">
         <h1>Pokemon Fight</h1>
 
-        <nav>
-            <a href="lista_treinadores.html">Listar Treinadores</a>
+        <nav class="d-flex">
+            <a href="lista_treinadores.html">Treinadores</a>
             <a href="index.html">HOME</a>
         </nav>
     </header>
-    <main id="father">
-        <div class="contain1">
-            <div><img src="" alt=""></div>
-            <div>
-                <h2>Pokemon já cadastrado?</h2>
-                <a href="batalhas.html"></a>
+    <main id="father" class="d-flex align-items-center justify-content-center flex-column">
+        <div class="contain1 d-flex row justify-content-center align-items-center">
+            <div class="d-flex flex-column coluna-1 ">
+                <img class="img-fluid" src="1528080665ash-and-pikachu-by-dashiesparkle-pokemon-png.png" alt="pikashu">
+                <br>
+                <br>
+                <br>
+                <h2>Treinador já cadastrado?</h2>
+                <div class=" botao-batalhas d-flex align-items-center justify-content-center">
+                    <a href="batalhas.html">Batalhar!</a>
+                </div>
             </div>
-            <div>
+            <div class="col-5 coluna-2">
                 <h2>Cadastro do Treinador</h2>
-                <form id="formTreinador">
-                    <label for="name">nome</label>
-                    <input type="text" name="name" id="name" placeholder="Novo Nome:">
+                <form id="formTreinador" class="d-flex flex-column justify-content-center">
 
-                    <label for="last_name">sobrenome</label>
-                    <input type="text" name="last_name" id="last_name">
+                    <label for="name" class="form-label">nome</label>
+                    <input type="text" name="name" id="name" class="form-control">
+                
 
-                    <label for="regiao">Região</label>
-                    <input type="text" name="regiao" id="regiao">
+                    <label for="last_name" class="form-label">sobrenome</label>
+                    <input type="text" name="last_name" id="last_name" class="form-control">
+                    
 
-                    <label for="bio">Biografia</label>
-                    <textarea name="bio" id="bio"></textarea>
+                    <label for="regiao" class="form-label">Região</label>
+                    <input type="text" name="regiao" id="regiao" class="form-control">
+                    
+
+                    <label for="bio" class="form-label">Biografia</label>
+                    <textarea name="bio" id="bio" class="form-control" rows="3"></textarea>
+                    <br>
 
                     <button type="submit">Cadastrar</button>
                 </form>

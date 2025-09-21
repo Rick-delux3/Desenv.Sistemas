@@ -21,24 +21,37 @@ header{
     font-family: 'Bungee';
     padding: 10px;
     font-size: 25px;
+    box-shadow: 0px 4px 3px var(--cor-primairia);
 
 }
 div.contain1{
     background-color: var(--cor-azul2);
-    width: 1100px;
+    width: 1055px;
     height: 65vh;
     margin-top: 10vh;
     border-radius: 10px;
     margin-bottom: 15vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 4px 5px var(--cor-quartenaria);
+    
+}
+.img{
+
+}
+.img img{
+    margin-left: 30px;
+    height: 50vh;
+    width: 250vh;
     
 }
 
 .subcontain{
     background-color: var(--cor-amarelo2);
     height: 60vh;
-    width: 35vh;
+    width: 30vh;
     font-size: 14px;
-    margin-left: -30px;
+    margin-left: 42px;
     border-radius: 15px;
 
 }
@@ -57,14 +70,49 @@ div.contain1{
     box-shadow: 0px 3px 0px var(--cor-amarelo3);
 }
 div.contain2{
-    border: 3px solid blue;
-    width: 1100px;
+    width: 1055px;
     margin-bottom: 10px;
     height: 25vh;
+    background-color: var(--cor-azul2);
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px var(--cor-quartenaria);
+
 
 }
 
 
-.a1, .a2, .a3{
-    background-color: var(--cor-amarelo2)
+.a1, .a2{
+    background-color: var(--cor-amarelo2);
+    text-align: center;
+    height: 10vh;
+    text-decoration: none;
+    padding: 19px;
+    border-radius: 20px;
+    color: var(--cor-primairia);
+    font-family: 'Press Start 2P';
+    font-size:12px;
+    transition: 0.3s ease;    
 }
+.a3{
+    background-color: var(--cor-amarelo2);
+    text-align: center;
+    height: 10vh;
+    text-decoration: none;
+    padding: 19px;
+    border-radius: 20px;
+    color: var(--cor-primairia);
+    font-family: 'Press Start 2P';
+    font-size:12px;
+    transition: 0.3s ease;    
+
+}
+
+.a1:hover, .a2:hover, .a3:hover{
+    transform: scale(1.1);
+    color: #3B4CCA;
+}
+
+.a1:active, .a2:active, .a3:active{
+    transform: scale(0.7);
+}
+
