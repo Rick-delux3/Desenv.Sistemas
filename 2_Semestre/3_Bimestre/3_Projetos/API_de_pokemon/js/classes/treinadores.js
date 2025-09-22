@@ -22,20 +22,16 @@ class Treinador{
             const objet = new Treinador(t.nome, t.sobrenome, t.regiao, t.bio);
             objet.id = t.id;
             return objet
-        })
-        Treinador.atualizarTela();
+        });
+        return Treinador.lista;
     }
 
-    static atualizarTela(){
-        document.getElementById("area-cards").innerHTML =
-            Treinador.lista.map(t => t.exibirTreinador()).join("");
-    }
-
-
-    static exibirTreinadores(){
-        return `<div class="card d-flex flex-column">
+    
+    
+     exibirTreinadores(){
+        return `<div class="card-treinador">
                     <h1 id="nome">${this.nome} ${this.sobrenome}</h1>
-                    <div class="dados">
+                    <div class="dados d-flex flex-column">
                         <p><strong>Região:</strong> ${this.regiao}</p>
                         <p id="biograf"><strong>Biografia:</strong> ${this.bio}</p>
                     </div>
@@ -46,8 +42,17 @@ class Treinador{
                 </div>`;
     }
 
-    static editar(id){
+    static atualizarTela(){
+         document.getElementById("area-cards").innerHTML =
+            Treinador.lista.map(t => t.exibirTreinadores()).join("");
+    }
 
+    static adicionarTreinador(treinador){
+        Treinador.lista.push(treinador);
+        Treinador.salvarLocalStorage();
+    }
+    static editar(id){
+        
         const treinador = Treinador.lista.find(t => t.id === id);
 
         if(treinador){
