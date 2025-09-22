@@ -16,6 +16,7 @@
     --cor-azul2: #3F61A6;
 }
 
+
 header{
     background-color: var(--cor-amarelo3);
     font-family: 'Bungee';
@@ -24,9 +25,17 @@ header{
     box-shadow: 0px 4px 3px var(--cor-primairia);
 
 }
+div#father{
+    margin: 0;
+    padding: 0;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4fda9f2e-bdae-436e-a729-995e442f0245/dejr7my-4643e7e4-2b76-494b-917e-63dc39d8efa2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi80ZmRhOWYyZS1iZGFlLTQzNmUtYTcyOS05OTVlNDQyZjAyNDUvZGVqcjdteS00NjQzZTdlNC0yYjc2LTQ5NGItOTE3ZS02M2RjMzlkOGVmYTIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jsO-LP4GXcn7wErC8VUVMggJsbDtj4rBjLN_WCLnQmo") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+}
 div.contain1{
     background-color: var(--cor-azul2);
-    width: 1055px;
+    width: 90%;
     height: 65vh;
     margin-top: 10vh;
     border-radius: 10px;
@@ -70,9 +79,9 @@ div.contain1{
     box-shadow: 0px 3px 0px var(--cor-amarelo3);
 }
 div.contain2{
-    width: 1055px;
+    width: 85%;
     margin-bottom: 10px;
-    height: 25vh;
+    height: 15vh;
     background-color: var(--cor-azul2);
     border-radius: 10px;
     box-shadow: 3px 4px 5px var(--cor-quartenaria);
@@ -84,26 +93,26 @@ div.contain2{
 .a1, .a2{
     background-color: var(--cor-amarelo2);
     text-align: center;
-    height: 10vh;
+    height: 5vh;
     text-decoration: none;
-    padding: 19px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 10px;
     color: var(--cor-primairia);
     font-family: 'Press Start 2P';
-    font-size:12px;
+    font-size:14px;
     transition: 0.3s ease;    
 }
 .a3{
     background-color: var(--cor-amarelo2);
     text-align: center;
-    height: 10vh;
+    height: 5vh;
     text-decoration: none;
-    padding: 19px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 10px;
     color: var(--cor-primairia);
     font-family: 'Press Start 2P';
-    font-size:12px;
-    transition: 0.3s ease;    
+    font-size:14px;
+    transition: 0.3s ease;      
 
 }
 

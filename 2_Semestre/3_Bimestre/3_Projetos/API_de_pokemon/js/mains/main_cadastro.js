@@ -4,11 +4,11 @@ document.getElementById("formTreinador").addEventListener("submit", function(e){
     Treinador.carregarLocalStorage();
 
     const nome = document.getElementById("name").value;
-    const sobrenome = document.getElementById("last_name").value;
     const regiao = document.getElementById("regiao").value;
     const bio = document.getElementById("bio").value;
+    const gender = document.getElementById("gender").value
 
-    const novoTreinador = new Treinador(nome, sobrenome, regiao, bio);
+    const novoTreinador = new Treinador(nome, regiao, bio, gender);
     Treinador.adicionarTreinador(novoTreinador);
     e.target.reset();
 

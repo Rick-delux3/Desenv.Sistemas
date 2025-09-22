@@ -2,12 +2,12 @@ class Treinador{
 
     static lista = [];
 
-    constructor(nome, sobrenome, regiao, bio){
+    constructor(nome, regiao, bio, genero){
         this.id = crypto.randomUUID();
         this.nome = nome;
-        this.sobrenome = sobrenome;
         this.regiao = regiao;
         this.bio = bio;
+        this.genero = genero;
 
     };
 
@@ -19,7 +19,7 @@ class Treinador{
         const dados = JSON.parse(localStorage.getItem("treinadores")) || [];
         
         Treinador.lista = dados.map(t =>{
-            const objet = new Treinador(t.nome, t.sobrenome, t.regiao, t.bio);
+            const objet = new Treinador(t.nome, t.regiao, t.bio, t.genero);
             objet.id = t.id;
             return objet
         });
@@ -29,11 +29,12 @@ class Treinador{
     
     
      exibirTreinadores(){
-        return `<div class="card-treinador">
-                    <h1 id="nome">${this.nome} ${this.sobrenome}</h1>
+        return `<div class="card-treinador col-7">
+                    <h1 id="nome">${this.nome}</h1>
                     <div class="dados d-flex flex-column">
                         <p><strong>Região:</strong> ${this.regiao}</p>
                         <p id="biograf"><strong>Biografia:</strong> ${this.bio}</p>
+                        <p><strong>Genero:</strong> ${this.genero}</p>
                     </div>
                     <div class="acoes">
                         <button onclick="Treinador.editar('${this.id}')">Atualizar</button>

@@ -50,11 +50,19 @@ nav > a:hover{
 nav > a:active{
     transform: scale(0.7);
 }
+main{
+    margin: 0;
+    padding: 0;
+    background: url("https://i.pinimg.com/originals/d9/5c/c5/d95cc5965605630c5fe92cb1afae0050.gif") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+}
 
 div.contain1{
-    width: 90%;
+    width: 85%;
     margin-top: 30px;
-    height: 100vh;
+    height: 90vh;
     background-color: var(--cor-azul2);
     border-radius: 15px;
     margin-bottom: 30px;
@@ -90,7 +98,7 @@ div.contain1{
 }
 .coluna-2{
     background-color: var(--cor-amarelo2);
-    height: 96vh;
+    height: 80vh;
     width: 82vh !important;
     margin-left: 22px;
     border-radius: 15px;
@@ -109,24 +117,29 @@ div.contain1{
 }
 
 #formTreinador{
-    height: 84vh;
+    height: 70vh;
 }
 
 #formTreinador > label{
     font-family: 'Orbitron';
-    font-size: 11px;
+    font-size: 14px;
     margin-top: 30px;
+    color: var(--cor-primairia);
 }
 
 input{
-    border-color: var(--cor-primairia) !important;
-    background-color: var(--cor-amarelo2) !important;
+    border-color: var(--cor-quartenaria) !important;
+    background-color: var(--cor-segundaria) !important;
 }
 
 textarea{
-    border-color: var(--cor-primairia) !important;
-    background-color: var(--cor-amarelo2) !important;
+    border-color: var(--cor-quartenaria) !important;
+    background-color: var(--cor-segundaria) !important;
 
+}
+select{
+    background-color: var(--cor-segundaria) !important;
+    border-color: var(--cor-quartenaria) !important;
 }
 
  #formTreinador > button{
