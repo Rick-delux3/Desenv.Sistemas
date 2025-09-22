@@ -12,15 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header1 d-flex justify-content-between">
+        <h1>Pokemon Fight</h1>
+
+        <nav class="d-flex">
+            <a href="cadastro_treinador.html">Cadastrar Treinador</a>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
     <div id="father">
-        <header class="header1">
-            <h1>Pokemon Fight</h1>
-        </header>
 
 
         <div class="father1 row d-flex justify-content-center w-100 h-50">
             <div class="contain1 col-3 d-flex flex-column">
                 <h2>Pokemon 1</h2>
+                <select name="" id=""></select>
                 <input type="text" id="pkm_name1" placeholder="Digite um Pokemon" class="form-control-sm mt-sm-3">
                 <button onclick="buscarPokemon1()" class="mt-2" id="btn1">Buscar</button>
                 <div id="resultado1">...
@@ -31,6 +37,7 @@
             </div>
             <div class="contain2 col-3 d-flex flex-column">
                 <h2>Pokemon 2</h2>
+                <select name="nome" id="master2"></select>
                 <input type="text" id="pkm_name2" placeholder="Digite um Pokemon" class="form-control-sm mt-sm-3    ">
                 <button onclick="buscarPokemon2()" class="mt-2" id="btn2">Buscar</button>
                 <div id="resultado2">

@@ -59,7 +59,7 @@ div.contain1{
     background-color: var(--cor-amarelo2);
     height: 60vh;
     width: 30vh;
-    font-size: 14px;
+    font-size: 20px;
     margin-left: 42px;
     border-radius: 15px;
 
@@ -80,7 +80,7 @@ div.contain1{
 }
 div.contain2{
     width: 85%;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     height: 15vh;
     background-color: var(--cor-azul2);
     border-radius: 10px;
