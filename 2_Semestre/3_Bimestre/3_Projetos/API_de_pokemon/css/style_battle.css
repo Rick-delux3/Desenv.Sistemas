@@ -60,8 +60,7 @@ nav > a{
     margin-right: 25px;
     color: var(--cor-primairia);
     font-family:'Press Start 2P';
-    font-size: 14px;
-    background-color: var(--cor-amarelo2);
+    font-size: 12px;
     padding: 5px;
     border-radius: 10px;
     transition: 0.4s ease;
@@ -90,13 +89,12 @@ div.father1{
 .contain1, .contain2{
     background-color:var(--cor-terciaria);
     width:400px;
-    height: 55vh  !important;
+    height: 650px  !important;
     border-radius: 20px;
     box-shadow: 3px 4px 3px  var(--cor-quintenaria);
+    margin-bottom: 30px;
 }
-.img-contain{
-    width: 400px;
-}
+
 .contain1 > h2, .contain2 > h2{
     background-color: var(--cor-quintenaria);
     margin-left: -12px;
@@ -127,6 +125,36 @@ div.father1{
 #btn2:active, #btn1:active{
     transform: scale(0.95);
 }
+div.card-1{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+div.card-1 >div.name{
+    background-color: var(--cor-azul2) !important;
+    font-family: 'Bungee';
+}
+div.card-1 > div.items{
+    background-color: var(--cor-segundaria);
+    color: var(--cor-segundaria);
+
+}
+div.card-2{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+div.card-2 >div.name2{
+    background-color: var(--cor-azul2) !important;
+    font-family: 'Bungee';
+}
+div.card-2 > div.items2{
+    background-color: var(--cor-segundaria);
+    color: var(--cor-segundaria);
+
+}
+
+
 .battle-log{
   background: #111; /* fundo escuro estilo arena */
   color: #fff;

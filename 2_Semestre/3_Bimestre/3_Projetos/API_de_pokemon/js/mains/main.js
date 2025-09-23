@@ -28,19 +28,26 @@ function buscarPokemon1(){
 
         console.log(p.exibirDados());
 
-        document.getElementById("resultado1").innerHTML = 
+        document.getElementById("resultado1").innerHTML = /*Html*/
         `
-        <progress id="hp1" value="0" max="100"></progress>
-        <h1>${p.nome}</h1>
-        <ul>
-            <li>Tipo: ${p.tipo} </li>
-            <li>Peso: ${p.peso} </li>
-            <li>hp: ${p.hp} </li>
-            <li>DEFESA: ${p.defesa} </li>
-            <li>ATAQUE: ${p.ataque} </li>
-        </ul>
-            <img src="${p.sprite}">
-            `;
+        <div class="card-1 card text-center shadow-lg border-warning mb-3" style="width: 18rem;">
+            <div class="name card-header text-dark fw-bold">
+                ${p.nome.toUpperCase()}
+            </div>
+            <div class="items card-body">
+                <img src="${p.sprite}" class="img-fluid mb-3" alt="${p.nome}">
+                <progress id="hp1" value="${p.hp}" max="${p.hp}" class="w-100 mb-2"></progress>
+                <ul class="list-group list-group-flush text-start">
+                    <li class="list-group-item"><strong>Tipo:</strong> ${p.tipo}</li>
+                    <li class="list-group-item"><strong>Peso:</strong> ${p.peso}</li>
+                    <li class="list-group-item"><strong>HP:</strong> ${p.hp}</li>
+                    <li class="list-group-item"><strong>Defesa:</strong> ${p.defesa}</li>
+                    <li class="list-group-item"><strong>Ataque:</strong> ${p.ataque}</li>
+                </ul>
+            </div>
+        </div>
+`;
+            
             
      document.getElementById("hp1").max = p.hp; 
      document.getElementById("hp1").value = p.hp; 
@@ -77,32 +84,37 @@ function buscarPokemon2(){
 
         console.log(po.exibirDados());
 
-        document.getElementById("resultado2").innerHTML = 
+        document.getElementById("resultado2").innerHTML = /*Html*/
         `
-        <progress id="hp2" value="0" max="100"></progress>
-        <h1>${po.nome}</h1>
-        <ul>
-            <li>Tipo: ${po.tipo} </li>
-            <li>Peso: ${po.peso} </li>
-            <li>HP: ${po.hp} </li>
-            <li>DEFESA: ${po.defesa} </li>
-            <li>ATAQUE: ${po.ataque} </li>
-        </ul>
-            <img src="${po.sprite}">
-            `;
-        document.getElementById("hp2").max = po.hp;
-        document.getElementById("hp2").value = po.hp; 
-    
-        
-        pokemon2 = po;
-        hp2 = po.hp;
-    
+        <div class="card-1 card text-center shadow-lg border-warning mb-3" style="width: 18rem;">
+            <div class="name card-header text-dark fw-bold">
+                ${po.nome.toUpperCase()}
+            </div>
+            <div class="items card-body">
+                <img src="${po.sprite}" class="img-fluid mb-3" alt="${po.nome}">
+                <progress id="hp1" value="${po.hp}" max="${po.hp}" class="w-100 mb-2"></progress>
+                <ul class="list-group list-group-flush text-start">
+                    <li class="list-group-item"><strong>Tipo:</strong> ${po.tipo}</li>
+                    <li class="list-group-item"><strong>Peso:</strong> ${po.peso}</li>
+                    <li class="list-group-item"><strong>HP:</strong> ${po.hp}</li>
+                    <li class="list-group-item"><strong>Defesa:</strong> ${po.defesa}</li>
+                    <li class="list-group-item"><strong>Ataque:</strong> ${po.ataque}</li>
+                </ul>
+            </div>
+        </div>
+`;
             
+            
+     document.getElementById("hp2").max = po.hp; 
+     document.getElementById("hp2").value = po.hp; 
+     pokemon2 = po;
+     hp2 = po.hp;     
         
     })
     .catch(erro=>{
         alert(erro.message);
     })
+
 }
 
 function batalhar(){

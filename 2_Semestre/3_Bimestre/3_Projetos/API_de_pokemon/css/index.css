@@ -30,6 +30,9 @@ header{
     z-index: 1000;
 
 }
+header h1{
+    font-size: 25px;
+}
 div#father{
     margin: 0;
     padding-top: 20px;
@@ -64,14 +67,13 @@ div.contain1{
     background-color: var(--cor-amarelo2);
     height: 60vh;
     max-width: 100%;
-    font-size: 20px;
     margin-left: 42px;
     border-radius: 15px;
 
 }
 .subcontain > p{
     font-family: 'Orbitron';
-    font-size: 20px;
+    font-size: 15px;
 }
 .subcontain > h2{
     background-color: var(--cor-terciaria);
@@ -87,7 +89,7 @@ div.contain1{
 div.contain2{
     width: 85%;
     margin-bottom: 15px;
-    height: 100px;
+    height: 90px;
     background-color: var(--cor-azul2);
     border-radius: 10px;
     box-shadow: 3px 4px 5px var(--cor-quartenaria);
@@ -100,26 +102,26 @@ div.contain2{
 .a1, .a2{
     background-color: var(--cor-amarelo2);
     text-align: center;
-    height: 50px;
+    height: 40px;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     color: var(--cor-primairia);
     font-family: 'Press Start 2P';
-    font-size:14px;
+    font-size:12px;
     transition: 0.3s ease;    
 }
 .a3{
     background-color: var(--cor-amarelo2);
     text-align: center;
-    height: 50px;
+    height: 40px;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     color: var(--cor-primairia);
     font-family: 'Press Start 2P';
-    font-size:14px;
-    transition: 0.3s ease;      
+    font-size:12px;
+    transition: 0.3s ease;    
 
 }
 

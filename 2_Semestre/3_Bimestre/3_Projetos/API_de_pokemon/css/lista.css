@@ -43,8 +43,7 @@ nav > a{
     margin-right: 25px;
     color: var(--cor-primairia);
     font-family:'Press Start 2P';
-    font-size: 14px;
-    background-color: var(--cor-amarelo2);
+    font-size: 12px;
     padding: 5px;
     border-radius: 10px;
     transition: 0.4s ease;
@@ -75,15 +74,16 @@ div.contain{
     height: 650px;
     background-color: var(--cor-azul2);
     border-radius: 10px;
+    margin: auto;
 }
 div.contain > div.item1{
-    height: 90vh !important;
-    width: 90vh;
+    height: 650px !important;
+    max-width: 100%;
 }
 div.contain > div#area-cards{    
     background-color: var(--cor-amarelo2);
     height: 100%;
-    margin-left: 10px;
+    margin-left: 9%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(2, 250px)); /* várias colunas conforme espaço */
     grid-auto-rows: 350px;
@@ -103,6 +103,7 @@ div.card-treinador{
     justify-content: space-between;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
     word-wrap: break-word;
+    font-family: 'Press Start SP';
 }
 div.card-treinador > h1#nome{
     font-family: 'Bungee';

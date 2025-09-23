@@ -17,7 +17,7 @@
     --cor-azul2: #3F61A6;
 }
 body{
-    padding-top: 80px;
+    padding-top: 78px;
 }
 
 header{
@@ -44,8 +44,7 @@ nav > a{
     margin-right: 25px;
     color: var(--cor-primairia);
     font-family:'Press Start 2P';
-    font-size: 14px;
-    background-color: var(--cor-amarelo2);
+    font-size: 12px;
     padding: 5px;
     border-radius: 10px;
     transition: 0.4s ease;
