@@ -23,11 +23,16 @@ header{
     padding: 10px;
     font-size: 25px;
     box-shadow: 0px 4px 3px var(--cor-primairia);
+    position: fixed;   
+    top: 0;            
+    left: 0;
+    width: 100%;       
+    z-index: 1000;
 
 }
 div#father{
     margin: 0;
-    padding: 0;
+    padding-top: 20px;
     background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4fda9f2e-bdae-436e-a729-995e442f0245/dejr7my-4643e7e4-2b76-494b-917e-63dc39d8efa2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi80ZmRhOWYyZS1iZGFlLTQzNmUtYTcyOS05OTVlNDQyZjAyNDUvZGVqcjdteS00NjQzZTdlNC0yYjc2LTQ5NGItOTE3ZS02M2RjMzlkOGVmYTIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jsO-LP4GXcn7wErC8VUVMggJsbDtj4rBjLN_WCLnQmo") no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
@@ -51,14 +56,14 @@ div.contain1{
 .img img{
     margin-left: 30px;
     height: 50vh;
-    width: 250vh;
+    max-width: 100%;
     
 }
 
 .subcontain{
     background-color: var(--cor-amarelo2);
     height: 60vh;
-    width: 30vh;
+    max-width: 100%;
     font-size: 20px;
     margin-left: 42px;
     border-radius: 15px;
@@ -66,6 +71,7 @@ div.contain1{
 }
 .subcontain > p{
     font-family: 'Orbitron';
+    font-size: 20px;
 }
 .subcontain > h2{
     background-color: var(--cor-terciaria);
@@ -80,11 +86,12 @@ div.contain1{
 }
 div.contain2{
     width: 85%;
-    margin-bottom: 2px;
-    height: 15vh;
+    margin-bottom: 15px;
+    height: 100px;
     background-color: var(--cor-azul2);
     border-radius: 10px;
     box-shadow: 3px 4px 5px var(--cor-quartenaria);
+
 
 
 }
@@ -93,7 +100,7 @@ div.contain2{
 .a1, .a2{
     background-color: var(--cor-amarelo2);
     text-align: center;
-    height: 5vh;
+    height: 50px;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
@@ -105,7 +112,7 @@ div.contain2{
 .a3{
     background-color: var(--cor-amarelo2);
     text-align: center;
-    height: 5vh;
+    height: 50px;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;

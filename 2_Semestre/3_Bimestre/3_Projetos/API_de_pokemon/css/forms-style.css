@@ -16,6 +16,9 @@
     --cor-amarelo3: #BF9004;
     --cor-azul2: #3F61A6;
 }
+body{
+    padding-top: 80px;
+}
 
 header{
     background-color: var(--cor-amarelo3);
@@ -23,10 +26,16 @@ header{
     padding: 10px;
     font-size: 25px;
     box-shadow: 0px 4px 3px var(--cor-primairia);
+    position: fixed;   
+    top: 0;            
+    left: 0;
+    width: 100%;       
+    z-index: 1000;
 
 }
 header > h1{
     margin-top: 15px;
+    font-size: 25px;
 }
 
 nav > a{
@@ -35,9 +44,9 @@ nav > a{
     margin-right: 25px;
     color: var(--cor-primairia);
     font-family:'Press Start 2P';
-    font-size: 16px;
+    font-size: 14px;
     background-color: var(--cor-amarelo2);
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     transition: 0.4s ease;
 }
@@ -51,6 +60,7 @@ nav > a:active{
     transform: scale(0.7);
 }
 main{
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background: url("https://i.pinimg.com/originals/d9/5c/c5/d95cc5965605630c5fe92cb1afae0050.gif") no-repeat center center fixed;
@@ -60,16 +70,16 @@ main{
 }
 
 div.contain1{
-    width: 85%;
+    max-width: 90%;
     margin-top: 30px;
-    height: 90vh;
+    height: 680px;
     background-color: var(--cor-azul2);
     border-radius: 15px;
     margin-bottom: 30px;
 }
 .coluna-1{
-    width: 89vh !important;
-    height: 90vh;
+    max-width: 50% !important;
+    height: 650px;
     
 }
 .coluna-1 > h2{
@@ -98,8 +108,8 @@ div.contain1{
 }
 .coluna-2{
     background-color: var(--cor-amarelo2);
-    height: 80vh;
-    width: 82vh !important;
+    height: 650px;
+    max-width: 82% !important;
     margin-left: 22px;
     border-radius: 15px;
 
@@ -117,7 +127,7 @@ div.contain1{
 }
 
 #formTreinador{
-    height: 70vh;
+    height: 100px;
 }
 
 #formTreinador > label{
