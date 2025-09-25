@@ -205,27 +205,85 @@ function ReiniciarBatalha(){
     alert("Arena resetada!");
 }
 
-function SelecionarTreinador1(){
-    const tr1 = Treinador.carregarLocalStorage();
 
-    let selection1 = document.querySelector("#master1");
-    let selection2 = document.querySelector("#master2");
+let treinadorSelecionado1 = null;
+let treinadorSelecionado2 = null;
 
+document.addEventListener("DOMContentLoaded", () => {
+  popularSelectsTreinadores();
+});
 
+function popularSelectsTreinadores() {
+  const s1 = document.getElementById("master1");
+  const s2 = document.getElementById("master2");
+  if (!s1 || !s2) return;
 
-    tr1.forEach(t => {
-        let op1 = document.createElement('option');
-        op1.value = t.id;
-        op1.textContent = t.nome;
-        selection1.appendChild(op1);
+  let lista = [];
+  if (typeof Treinador !== "undefined" && typeof Treinador.carregarLocalStorage === "function") {
+    lista = Treinador.carregarLocalStorage() || [];
+  } else {
+    try {
+      lista = JSON.parse(localStorage.getItem("treinadores")) || [];
+    } catch (err) {
+      lista = [];
+      console.error("Erro ao parsear localStorage.treinadores:", err);
+    }
+  }
 
-        let op2 = document.createElement('option');
-        op1.value = t.id;
-        op1.textContent = t.nome;
-        selection2.appendChild(op2);
-    });
+  s1.innerHTML = '<option value="">Selecione um treinador</option>';
+  s2.innerHTML = '<option value="">Selecione um treinador</option>';
 
-    
+  if (!Array.isArray(lista) || lista.length === 0) {
+    return;
+  }
+
+  lista.forEach((t, i) => {
+    const id = t.id
+    const nome = (t.nome).toString();
+
+    const opt1 = document.createElement("option");
+    opt1.value = id;
+    opt1.textContent = nome;
+
+    s1.appendChild(opt1);
+    s2.appendChild(opt1.cloneNode(true));
+  });
+
+  s1.style.color = "#000";
+  s2.style.color = "#000";
 }
 
-document.addEventListener("DOMContentLoaded", carregarTreinadoresSelect);
+function SelecionarTreinador() {
+  const s1 = document.getElementById("master1");
+  const s2 = document.getElementById("master2");
+
+  treinadorSelecionado1 = null;
+  treinadorSelecionado2 = null;
+
+  if (s1 && s1.value) {
+    if (typeof Treinador !== "undefined" && Array.isArray(Treinador.lista)) {
+      treinadorSelecionado1 = Treinador.lista.find(t => t.id === s1.value) || null;
+    }
+    if (!treinadorSelecionado1) {
+      const raw = JSON.parse(localStorage.getItem("treinadores") || "[]");
+      treinadorSelecionado1 = raw.find(r => (r.id === s1.value || r._id === s1.value)) || null;
+    }
+  }
+
+  if (s2 && s2.value) {
+    if (typeof Treinador !== "undefined" && Array.isArray(Treinador.lista)) {
+      treinadorSelecionado2 = Treinador.lista.find(t => t.id === s2.value) || null;
+    }
+    if (!treinadorSelecionado2) {
+      const raw = JSON.parse(localStorage.getItem("treinadores") || "[]");
+      treinadorSelecionado2 = raw.find(r => (r.id === s2.value || r._id === s2.value)) || null;
+    }
+  }
+
+  console.log("Selecionado 1:", treinadorSelecionado1);
+  console.log("Selecionado 2:", treinadorSelecionado2);
+}
+
+    
+
+
