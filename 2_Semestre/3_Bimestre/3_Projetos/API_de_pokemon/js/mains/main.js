@@ -86,13 +86,13 @@ function buscarPokemon2(){
 
         document.getElementById("resultado2").innerHTML = /*Html*/
         `
-        <div class="card-1 card text-center shadow-lg border-warning mb-3" style="width: 18rem;">
-            <div class="name card-header text-dark fw-bold">
+        <div class="card-2 card text-center shadow-lg border-warning mb-3" style="width: 18rem;">
+            <div class="name2 card-header text-dark fw-bold">
                 ${po.nome.toUpperCase()}
             </div>
-            <div class="items card-body">
+            <div class="items2 card-body">
                 <img src="${po.sprite}" class="img-fluid mb-3" alt="${po.nome}">
-                <progress id="hp1" value="${po.hp}" max="${po.hp}" class="w-100 mb-2"></progress>
+                <progress id="hp2" value="${po.hp}" max="${po.hp}" class="w-100 mb-2"></progress>
                 <ul class="list-group list-group-flush text-start">
                     <li class="list-group-item"><strong>Tipo:</strong> ${po.tipo}</li>
                     <li class="list-group-item"><strong>Peso:</strong> ${po.peso}</li>
@@ -104,8 +104,7 @@ function buscarPokemon2(){
         </div>
 `;
             
-            
-     document.getElementById("hp2").max = po.hp; 
+; 
      document.getElementById("hp2").value = po.hp; 
      pokemon2 = po;
      hp2 = po.hp;     
@@ -206,3 +205,27 @@ function ReiniciarBatalha(){
     alert("Arena resetada!");
 }
 
+function SelecionarTreinador1(){
+    const tr1 = Treinador.carregarLocalStorage();
+
+    let selection1 = document.querySelector("#master1");
+    let selection2 = document.querySelector("#master2");
+
+
+
+    tr1.forEach(t => {
+        let op1 = document.createElement('option');
+        op1.value = t.id;
+        op1.textContent = t.nome;
+        selection1.appendChild(op1);
+
+        let op2 = document.createElement('option');
+        op1.value = t.id;
+        op1.textContent = t.nome;
+        selection2.appendChild(op2);
+    });
+
+    
+}
+
+document.addEventListener("DOMContentLoaded", carregarTreinadoresSelect);

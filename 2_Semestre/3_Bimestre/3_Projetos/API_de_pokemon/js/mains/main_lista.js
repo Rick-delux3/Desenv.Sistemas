@@ -8,3 +8,4 @@ window.onload = () => {
         alert("Nenhum treinador cadastrado!!");
     }
 };
+

@@ -42,8 +42,8 @@ nav > a{
     margin-top: 30px;
     margin-right: 25px;
     color: var(--cor-primairia);
-    font-family:'Press Start 2P';
-    font-size: 12px;
+    font-family:'Bungee';
+    font-size: 14px;
     padding: 5px;
     border-radius: 10px;
     transition: 0.4s ease;
@@ -75,6 +75,7 @@ div.contain{
     background-color: var(--cor-azul2);
     border-radius: 10px;
     margin: auto;
+    box-shadow: 0 0 6px var(--cor-quartenaria);
 }
 div.contain > div.item1{
     height: 650px !important;
@@ -101,7 +102,7 @@ div.card-treinador{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px var(--cor-primairia);
     word-wrap: break-word;
     font-family: 'Press Start SP';
 }
@@ -118,24 +119,26 @@ div.card-treinador > p{
     font-family: 'Bungee';
 }
 div.acoes > button.btn1{
+    margin: auto;
     border-style: none;
     font-family: 'Press Start 2P';
     font-size: 12px;
     background-color: var(--cor-quintenaria);
     color: var(--cor-segundaria);
     padding: 8px;
-    max-width: 300px;
+    width:200px;
     border-radius: 15px 0px 0px 15px;
     
 }
 div.acoes > button.btn2{
+    margin: auto;
     border-style: none;
     font-family: 'Press Start 2P';
     font-size: 12px;
     background-color: var(--cor-quintenaria);
     color: var(--cor-segundaria);
     padding: 8px;
-    max-width: 300px;
+    width: 200px;
     border-radius: 0px 15px 15px 0px;
     
 }
