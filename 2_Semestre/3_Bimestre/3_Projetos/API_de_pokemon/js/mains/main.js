@@ -175,12 +175,12 @@ function batalhar(){
             
             } else if (hp1 <= 0) {
 
-                vencedor = pokemon2.nome;
+                vencedor = pokemon1.nome;
                 
                 log += `<div class="alert alert-success text-center fw-bold">🏆 ${vencedor} venceu a batalha!</div>`
             
             } else {
-                vencedor = pokemon1.nome;
+                vencedor = pokemon2.nome;
                 log += `<div class="alert alert-success text-center fw-bold">🏆 ${vencedor} venceu a batalha!</div>`
             }
 
