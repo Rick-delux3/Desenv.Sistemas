@@ -90,7 +90,7 @@ class Treinador{
             p.appendChild(textarea);
 
             p2.innerHTML = "";
-            p.appendChild(input2);
+            p2.appendChild(input2);
 
             
 
